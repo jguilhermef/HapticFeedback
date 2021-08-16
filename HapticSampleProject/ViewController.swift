@@ -10,24 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func triggerSelection(_ sender: Any) {
-        let selectionFeedback = UISelectionFeedbackGenerator()
-        selectionFeedback.selectionChanged()
+    @IBAction
+    func triggerSelection(_ sender: Any) {
+        Haptic.shared.trigger(.selection)
     }
     
-    @IBAction func triggerSuccess(_ sender: Any) {
-        let notificationFeedback = UINotificationFeedbackGenerator()
-        notificationFeedback.notificationOccurred(.success)
+    @IBAction
+    func triggerSuccess(_ sender: Any) {
+        Haptic.shared.trigger(.success)
     }
     
-    @IBAction func triggerWarning(_ sender: Any) {
-        let notificationFeedback = UINotificationFeedbackGenerator()
-        notificationFeedback.notificationOccurred(.warning)
+    @IBAction
+    func triggerWarning(_ sender: Any) {
+        Haptic.shared.trigger(.warning)
     }
     
-    @IBAction func triggerError(_ sender: Any) {
-        let notificationFeedback = UINotificationFeedbackGenerator()
-        notificationFeedback.notificationOccurred(.error)
+    @IBAction
+    func triggerError(_ sender: Any) {
+        Haptic.shared.trigger(.error)
     }
 }
-

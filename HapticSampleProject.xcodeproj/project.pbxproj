@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BF896C26CA9F73008E4CBD /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF896B26CA9F73008E4CBD /* Haptic.swift */; };
 		1B3CA0EB220A497B00889941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CA0EA220A497B00889941 /* AppDelegate.swift */; };
 		1B3CA0ED220A497B00889941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3CA0EC220A497B00889941 /* ViewController.swift */; };
 		1B3CA0F0220A497B00889941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3CA0EE220A497B00889941 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18BF896B26CA9F73008E4CBD /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
 		1B3CA0E7220A497B00889941 /* HapticSampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticSampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3CA0EA220A497B00889941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B3CA0EC220A497B00889941 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				1B3CA0F1220A497C00889941 /* Assets.xcassets */,
 				1B3CA0F3220A497C00889941 /* LaunchScreen.storyboard */,
 				1B3CA0F6220A497C00889941 /* Info.plist */,
+				18BF896B26CA9F73008E4CBD /* Haptic.swift */,
 			);
 			path = HapticSampleProject;
 			sourceTree = "<group>";
@@ -91,11 +94,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = JG;
 				TargetAttributes = {
 					1B3CA0E6220A497B00889941 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -135,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BF896C26CA9F73008E4CBD /* Haptic.swift in Sources */,
 				1B3CA0ED220A497B00889941 /* ViewController.swift in Sources */,
 				1B3CA0EB220A497B00889941 /* AppDelegate.swift in Sources */,
 			);
@@ -188,6 +193,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -249,6 +255,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -285,13 +292,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E6AL7RL5XU;
 				INFOPLIST_FILE = HapticSampleProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.HapticSampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -303,13 +311,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E6AL7RL5XU;
 				INFOPLIST_FILE = HapticSampleProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.personal.HapticSampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
